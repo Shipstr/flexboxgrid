@@ -16,10 +16,6 @@
   --container-lg: calc(var(--lg-min) + var(--gutter-width));
 }
 
-@custom-media --sm-viewport only screen and (min-width: 48em);
-@custom-media --md-viewport only screen and (min-width: 64em);
-@custom-media --lg-viewport only screen and (min-width: 75em);
-
 .row {
   box-sizing: border-box;
   display: flex;
@@ -227,7 +223,7 @@
   order: 1;
 }
 
-@media (--sm-viewport) {
+@media (only screen and (min-width: 48em)) {
   .col-sm,
   .col-sm-1,
   .col-sm-2,
@@ -418,7 +414,7 @@
   }
 }
 
-@media (--md-viewport) {
+@media (only screen and (min-width: 64em)) {
   .col-md,
   .col-md-1,
   .col-md-2,
@@ -609,7 +605,7 @@
   }
 }
 
-@media (--lg-viewport) {
+@media (only screen and (min-width: 75em)) {
   .col-lg,
   .col-lg-1,
   .col-lg-2,
