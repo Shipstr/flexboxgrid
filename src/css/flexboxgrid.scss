@@ -1,12 +1,12 @@
 :root {
-  --gutter-width: 1em;
-  --outer-margin: 2rem;
+  --gutter-width: 2em;
+  --outer-margin: 4rem;
   --gutter-compensation: calc((var(--gutter-width) * 0.5) * -1);
   --half-gutter-width: calc((var(--gutter-width) * 0.5));
-  --xs-min: 30;
-  --sm-min: 48;
-  --md-min: 64;
-  --lg-min: 75;
+  --xs-min: 37.5;
+  --sm-min: 60;
+  --md-min: 80;
+  --lg-min: 120;
   --screen-xs-min: var(--xs-min)em;
   --screen-sm-min: var(--sm-min)em;
   --screen-md-min: var(--md-min)em;
@@ -223,7 +223,7 @@
   order: 1;
 }
 
-@media only screen and (min-width: 48em) {
+@media only screen and (min-width: 37.5em) {
   .col-sm,
   .col-sm-1,
   .col-sm-2,
@@ -414,7 +414,7 @@
   }
 }
 
-@media only screen and (min-width: 64em) {
+@media only screen and (min-width: 60em) {
   .col-md,
   .col-md-1,
   .col-md-2,
@@ -605,7 +605,7 @@
   }
 }
 
-@media only screen and (min-width: 75em) {
+@media only screen and (min-width: 80em) {
   .col-lg,
   .col-lg-1,
   .col-lg-2,
