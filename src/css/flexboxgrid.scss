@@ -1,7 +1,7 @@
 $gutter-width: 2rem;
 $outer-margin: 2rem;
-$gutter-compensation: calc($gutter-width * 0.5 * -1);
-$half-gutter-width: calc($gutter-width * 0.5);
+$gutter-compensation: calc(#{$gutter-width} * 0.5 * -1);
+$half-gutter-width: calc(#{$gutter-width} * 0.5);
 $xs-min: 37.5rem;
 $sm-min: 60rem;
 $md-min: 80rem;
@@ -10,9 +10,9 @@ $screen-xs-min: $xs-min;
 $screen-sm-min: $sm-min;
 $screen-md-min: $md-min;
 $screen-lg-min: $lg-min;
-$container-sm: calc($sm-min + $gutter-width);
-$container-md: calc($md-min + $gutter-width);
-$container-lg: calc($lg-min + $gutter-width);
+$container-sm: calc(#{$sm-min} + #{$gutter-width});
+$container-md: calc(#{$md-min} + #{$gutter-width});
+$container-lg: calc(#{$lg-min} + #{$gutter-width});
 
 .row {
   box-sizing: border-box;
