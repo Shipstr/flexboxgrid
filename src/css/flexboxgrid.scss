@@ -1,6 +1,6 @@
 $gutter-width: 2rem;
 $outer-margin: 2rem;
-$gutter-compensation: calc($gutter-width * 0.5) * -1;
+$gutter-compensation: calc($gutter-width * 0.5 * -1);
 $half-gutter-width: calc($gutter-width * 0.5);
 $xs-min: 37.5rem;
 $sm-min: 60rem;
