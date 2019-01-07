@@ -1,20 +1,18 @@
-:root {
-  --gutter-width: 2rem;
-  --outer-margin: 2rem;
-  --gutter-compensation: calc((var(--gutter-width) * 0.5) * -1);
-  --half-gutter-width: calc((var(--gutter-width) * 0.5));
-  --xs-min: 37.5;
-  --sm-min: 60;
-  --md-min: 80;
-  --lg-min: 120;
-  --screen-xs-min: var(--xs-min)em;
-  --screen-sm-min: var(--sm-min)em;
-  --screen-md-min: var(--md-min)em;
-  --screen-lg-min: var(--lg-min)em;
-  --container-sm: calc(var(--sm-min) + var(--gutter-width));
-  --container-md: calc(var(--md-min) + var(--gutter-width));
-  --container-lg: calc(var(--lg-min) + var(--gutter-width));
-}
+$gutter-width: 2rem;
+$outer-margin: 2rem;
+$gutter-compensation: calc($gutter-width * 0.5) * -1);
+$half-gutter-width: calc($gutter-width * 0.5);
+$xs-min: 37.5rem;
+$sm-min: 60rem;
+$md-min: 80rem;
+$lg-min: 120rem;
+$screen-xs-min: $xs-min;
+$screen-sm-min: $sm-min;
+$screen-md-min: $md-min;
+$screen-lg-min: $lg-min;
+$container-sm: calc($sm-min + $gutter-width);
+$container-md: calc($md-min + $gutter-width);
+$container-lg: calc($lg-min + $gutter-width);
 
 .row {
   box-sizing: border-box;
@@ -22,8 +20,8 @@
   flex: 0 1 auto;
   flex-direction: row;
   flex-wrap: wrap;
-  margin-right: var(--gutter-compensation, -1rem);
-  margin-left: var(--gutter-compensation, -1rem);
+  margin-right: $gutter-compensation;
+  margin-left: $gutter-compensation;
 }
 
 .row.reverse {
@@ -62,8 +60,8 @@
 .col-xs-offset-12 {
   box-sizing: border-box;
   flex: 0 0 auto;
-  padding-right: var(--half-gutter-width, 1rem);
-  padding-left: var(--half-gutter-width, 1rem);
+  padding-right: $half-gutter-width;
+  padding-left: $half-gutter-width;
 }
 
 .col-xs {
@@ -252,8 +250,8 @@
   .col-sm-offset-12 {
     box-sizing: border-box;
     flex: 0 0 auto;
-    padding-right: var(--half-gutter-width, 1rem);
-    padding-left: var(--half-gutter-width, 1rem);
+    padding-right: $half-gutter-width;
+    padding-left: $half-gutter-width;
   }
 
   .col-sm {
@@ -443,8 +441,8 @@
   .col-md-offset-12 {
     box-sizing: border-box;
     flex: 0 0 auto;
-    padding-right: var(--half-gutter-width, 1rem);
-    padding-left: var(--half-gutter-width, 1rem);
+    padding-right: $half-gutter-width;
+    padding-left: $half-gutter-width;
   }
 
   .col-md {
@@ -634,8 +632,8 @@
   .col-lg-offset-12 {
     box-sizing: border-box;
     flex: 0 0 auto;
-    padding-right: var(--half-gutter-width, 1rem);
-    padding-left: var(--half-gutter-width, 1rem);
+    padding-right: $half-gutter-width;
+    padding-left: $half-gutter-width;
   }
 
   .col-lg {
